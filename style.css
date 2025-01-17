@@ -1,0 +1,171 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+}
+
+:root {
+  --navtext-color: #ffffff;
+  --btn-background: #000000;
+  --download-btn: #32ac64;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 15/4;
+  object-fit: cover;
+  position: absolute;
+  z-index: -1;
+}
+h4 {
+  color: var(--navtext-color);
+}
+a {
+  color: var(--navtext-color);
+  text-decoration: none;
+}
+h1 {
+  color: var(--navtext-color);
+}
+button {
+  width: 90px;
+  height: 40px;
+  padding: 5px;
+  border: 0;
+  border-radius: 10% ;
+}
+
+i {
+  font-size: 2vw;
+  font-weight: 900;
+  color: var(--navtext-color);
+  display: none;
+}
+
+.pixel-navbar,.pixel-searchbox {
+  width: 100%;
+  height: 50px;
+  /* border: 1px solid var(--navtext-color); */
+  display: flex;
+  padding: 2vw 4vw;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pixel-navbar a,
+button {
+  margin-left: 3vw;
+}
+
+.pixel-navbar #btn {
+   font-weight: bolder;
+  font-size: 1.8vw;
+  text-decoration: none;
+}
+
+
+/* day2: pixel-searchbox  */
+.pixel-searchbox{
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pixel-content{
+  width: 600px;
+  
+}
+.dropdown{
+  
+  height: 50px;
+  background-color: var(--navtext-color);
+  border: none;
+  border-radius: 10px;
+  padding: 1px;
+}
+.dropdown input{
+  width: 500px;
+  border-radius: 10px;
+}
+.dropdown  select{
+  width: 93px;
+  padding: 15px;
+  border-radius: 10px;
+   
+}
+
+/* day3 */
+.pexel-toggle{
+  margin-top: 3.5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  margin-right: 40px;
+  padding: 5px;
+}
+.pexel-toggle button{
+  background-color: var(--btn-background);
+  color: var(--navtext-color);
+  border-radius: 50px;
+}
+
+
+@media (max-width: 836px) {
+  img{
+    width: 100%;
+    height: 360px;
+    aspect-ratio: auto;
+  }  
+}
+/* responsive */
+@media (max-width: 600px) {
+  .pixel-end {
+    display: none;
+  }
+  .pixel-navbar i {
+    
+    z-index: -1;
+    font-size: 4.5vw;
+    display: block;
+  }
+  img {
+    width: 100%;
+    height: 400px;
+    padding: 5px;
+    aspect-ratio: auto;
+  }
+ 
+
+  .dropdown {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .dropdown input {
+    width: 100%;
+    margin-top:5px;
+    padding: 20px;
+  }
+
+  .dropdown select {
+    width: 100%;
+    margin-top: 10px;
+
+  }
+
+  
+  
+}
